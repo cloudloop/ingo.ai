@@ -1,0 +1,12 @@
+--COLOR-1-BLUE: rgba(20,37,57,1);
+--COLOR-1-WHITE: rgba(249,249,249,1);
+--COLOR-2-BLUE: rgba(25,47,79,1);
+--COLOR-2-WHITE: rgba(237,237,237,1);
+
+body {
+    color: var(--COLOR-1-BLUE);
+}
+
+.container {
+    width
+}
