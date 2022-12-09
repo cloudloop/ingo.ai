@@ -15,6 +15,7 @@ body {
 .container {
     width: 1vw;
     height: 1vh;
+    position: relative;
 }
 .logobg {
     margin: auto;
