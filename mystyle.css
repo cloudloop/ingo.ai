@@ -8,5 +8,15 @@ body {
 }
 
 .container {
-    width
+    width: 1vw;
+    height: 1vh;
+}
+.logobg {
+    margin: auto;
+    z-index: 1;
+}
+
+.logocontainer {
+    z-index: 2;
+    margin: auto;
 }
