@@ -31,31 +31,36 @@ img {
 .logocontainer {
     z-index: 2;
     margin: auto;
+    display: flex;
 }
 
 .frontslash {
+    flex:1;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: black;
+    background-color: var(--COLOR-1-BLUE);
     position: relative;
     transform: translate(calc(-1 * (var(--LOGO-W)*var(--SCALE)))) skew(-21deg);
 }
 .backslash {
+    flex:1;
     transform: translate(calc(var(--LOGO-W)*var(--SCALE)),calc(-1 *var(--LOGO-H)*var(--SCALE))) skew(21deg);
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: black;
+    background-color: var(--COLOR-1-BLUE);
 }
 .straight {
+    flex:1;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: black;
+    background-color: var(--COLOR-1-BLUE);
     transform: translate(calc(var(--LOGO-W)*var(--SCALE)*3.5),calc(-2 *var(--LOGO-H)*var(--SCALE)))
 }
 .dot {
+    flex:1;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-W)*var(--SCALE));
-    background-color: black;
+    background-color: var(--COLOR-1-BLUE);
     margin: calc(var(--LOGO-W)*var(--SCALE));
     transform: translate(calc(var(--LOGO-W)*var(--SCALE)*4.2),calc(-2.38 *var(--LOGO-H)*var(--SCALE)))
 }
