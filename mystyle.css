@@ -19,7 +19,7 @@ body {
 .logobg {
     margin: auto;
     z-index: 1;
-    max-width: 200px;
+    width: 200px;
     max-height: 200px;
 
 }
@@ -29,5 +29,5 @@ body {
     margin: auto;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: var(--COLOR-1-BLUE);
+    background-color: pink;
 }
