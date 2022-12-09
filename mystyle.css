@@ -5,7 +5,7 @@
     --COLOR-2-WHITE: rgba(237,237,237,1);
     --LOGO-W: 218px; 
     --LOGO-H: 1122px;
-    --SCALE: 0.9;
+    --SCALE: 0.1;
 }
 
 body {
@@ -27,28 +27,34 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
 .logocontainer {
     z-index: 2;
     margin: auto;
-    background-color: pink;
 }
 
 .frontslash {
-    transform: skew(-11deg);
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: red;
-
+    background-color: black;
+    position: relative;
+    transform: translate(calc(-1 * (var(--LOGO-W)*var(--SCALE)))) skew(-21deg);
 }
 .backslash {
-    transform: skew(11deg);
+    transform: translate(calc(var(--LOGO-W)*var(--SCALE)),calc(-1 *var(--LOGO-H)*var(--SCALE))) skew(21deg);
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
-    background-color: blue;
+    background-color: black;
+}
+.straight {
+    width: calc(var(--LOGO-W)*var(--SCALE));
+    height: calc(var(--LOGO-H)*var(--SCALE));
+    background-color: black;
+    transform: translate(calc(var(--LOGO-W)*var(--SCALE)*3.5),calc(-2 *var(--LOGO-H)*var(--SCALE)))
 }
 .dot {
-    width: var(--LOGO-W);
-    height: var(--LOGO-W);
+    width: calc(var(--LOGO-W)*var(--SCALE));
+    height: calc(var(--LOGO-W)*var(--SCALE));
     background-color: black;
+    margin: calc(var(--LOGO-W)*var(--SCALE));
+    transform: translate(calc(var(--LOGO-W)*var(--SCALE)*4.2),calc(-2.38 *var(--LOGO-H)*var(--SCALE)))
 }
