@@ -16,6 +16,7 @@ body {
     width: 1vw;
     height: 1vh;
     position: relative;
+    margin: auto;
 }
 .logobg {
     margin: auto;
