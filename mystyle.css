@@ -32,6 +32,7 @@ img {
     z-index: 2;
     margin: auto;
     display: flex;
+    vertical-align: middle;
 }
 
 .frontslash {
