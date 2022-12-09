@@ -3,8 +3,8 @@
     --COLOR-1-WHITE: rgba(249,249,249,1);
     --COLOR-2-BLUE: rgba(25,47,79,1);
     --COLOR-2-WHITE: rgba(237,237,237,1);
-    --LOGO-W: 218; 
-    --LOGO-H: 1122;
+    --LOGO-W: 218px; 
+    --LOGO-H: 1122px;
     --SCALE: 0.2;
 }
 
@@ -22,7 +22,7 @@ body {
     z-index: 1;
     width: 200px;
     max-height: 200px;
-
+    overflow:hidden;
 }
 
 .logocontainer {
@@ -31,4 +31,12 @@ body {
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
     background-color: pink;
+    display: block;
+}
+
+.frontslash {
+    transform: skew(-11deg);
+}
+.backslash {
+    transform: skew(11deg);
 }
