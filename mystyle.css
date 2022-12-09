@@ -31,14 +31,11 @@ img {
 .logocontainer {
     z-index: 2;
     margin: auto;
-    width: auto;
-    height: auto;
     background-color: pink;
 }
 
 .frontslash {
     transform: skew(-11deg);
-    position: inherit;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
     background-color: red;
@@ -46,7 +43,6 @@ img {
 }
 .backslash {
     transform: skew(11deg);
-    position: inherit;
     width: calc(var(--LOGO-W)*var(--SCALE));
     height: calc(var(--LOGO-H)*var(--SCALE));
     background-color: blue;
