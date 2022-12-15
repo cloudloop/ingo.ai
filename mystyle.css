@@ -1,5 +1,5 @@
 :root {
-    --COLOR-1-BLUE: rgba(20,37,57,0.5);
+    --COLOR-1-BLUE: rgba(20,37,57,1);
     --COLOR-1-WHITE: rgba(249,249,249,1);
     --COLOR-2-BLUE: rgba(25,47,79,1);
     --COLOR-2-WHITE: rgba(237,237,237,1);
@@ -10,48 +10,33 @@
 
 body {
     color: var(--COLOR-1-BLUE);
+    background-color: var(--COLOR-1-WHITE);
     width: 100vw;
     height: 100vh;
 }
-
 .container {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    min-width: 370px;
     margin: auto;
-}
-.logobg {
-
-}
-img {
-
-}
-.logocontainer {
     display: flex;
-
-}
-
-.frontslash {
-    flex:1;
-    width: calc(var(--LOGO-W)*var(--SCALE));
-    height: calc(var(--LOGO-H)*var(--SCALE));
+    flex-direction: row;
+    gap: 30px;
+  }
+  .a {
+    width: 200px;
+    height: 200px;
     background-color: var(--COLOR-1-BLUE);
-}
-.backslash {
-    flex:1;
-    width: calc(var(--LOGO-W)*var(--SCALE));
-    height: calc(var(--LOGO-H)*var(--SCALE));
+    clip-path: polygon(0% 100%, 22% 100%, 50% 22%, 78% 100%, 100% 100%, 60% 0%, 40% 0%);
+  
+  }
+  .i {
+    width: 40px;
+    height: 200px;
     background-color: var(--COLOR-1-BLUE);
-}
-.straight {
-    flex: 1;
-    width: calc(var(--LOGO-W)*var(--SCALE));
-    height: calc(var(--LOGO-H)*var(--SCALE));
+  }
+  
+  .dot {
+    height: 40px;
+    width: 40px;
+    transform: translate(0,160px);
     background-color: var(--COLOR-1-BLUE);
-}
-.dot {
-    flex: 1;
-    width: calc(var(--LOGO-W)*var(--SCALE));
-    height: calc(var(--LOGO-W)*var(--SCALE));
-    background-color: var(--COLOR-1-BLUE);
-}
+  }
