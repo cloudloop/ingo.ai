@@ -3,6 +3,7 @@
     --COLOR-1-WHITE: rgba(249,249,249,1);
     --COLOR-2-BLUE: rgba(25,47,79,1);
     --COLOR-2-WHITE: rgba(237,237,237,1);
+    --COLOR-LINKEDIN: rgba(0,119,181,1);
     --LOGO-W: 218px; 
     --LOGO-H: 1122px;
     --SCALE: 0.1;
@@ -53,15 +54,50 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--COLOR-2-WHITE);
     margin: 4vh;
     gap: calc(340px/6);
     max-width: 340px;
   }
   .link {
+    align-items: center;
+    font-weight: bold;
+    color: lightgray;
     width: 20px;
     height: 20px;
     flex: 1;
     border: lightgray 1px solid;
     text-align: center;
+    vertical-align: middle;
+}
+.email {
+  font-size: 1.2em;
+}
+.email:hover {
+  color: var(--COLOR-1-BLUE);
+}
+
+.linkedin{
+  font-family: Myriad Web Pro,Helvetica, Arial, sans-serif;
+}
+.linkedin:hover{
+  color: var(--COLOR-LINKEDIN);
+}
+
+.dev {
+  font-weight: normal;
+  font-size: 0.6em;
+  word-spacing: 0.05em;
+}
+.down-arrow {
+  width: 2vw;
+  height: 2vw;
+  border-right: 5px var(--COLOR-2-WHITE) solid;
+  border-bottom: 5px var(--COLOR-2-WHITE) solid;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 2vh;
+  
+}
+.down-arrow:hover {
+  border-color: var(--COLOR-1-BLUE);
 }
