@@ -1,4 +1,5 @@
 :root {
+  min-height: 100vh;
     --COLOR-1-BLUE: rgba(20,37,57,1);
     --COLOR-1-WHITE: rgba(249,249,249,1);
     --COLOR-2-BLUE: rgba(25,47,79,1);
@@ -14,13 +15,28 @@ body {
     color: var(--COLOR-1-BLUE);
     background-color: var(--COLOR-1-WHITE);
     width: 100vw;
-    height: 100vh;
-    display: flex;
+    min-height: 200vh;
+    overflow: scroll;
+    position: relative;
+    top:0px;
+    display: block;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+.contcont {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  top:0px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .container {
     min-width: 370px;
     min-height: 200px;
@@ -98,9 +114,54 @@ body {
   border-bottom: 5px var(--COLOR-2-WHITE) solid;
   transform: rotate(45deg);
   position: absolute;
-  bottom: 3vh;
+  bottom: 5vh;
   
 }
 .down-arrow:hover {
   border-color: var(--COLOR-1-BLUE);
+}
+
+.featured {
+  width: 100%;
+  min-height: 33vh;
+  position: relative;
+  background-color: lightgray;
+  padding-bottom: 5vw;
+  margin-top: 3vh;
+}
+.featureTitle{
+  text-align: center;
+  font-variant: small-caps;
+  color: var(--COLOR-1-WHITE);
+  padding: 1em;
+
+}
+.f-cont {
+  width:90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin: auto 5vw ;
+}
+.feature-card{
+  flex: 1;
+  height: 20vh;
+  min-width: 100px;
+  background-color: grey;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  min-height: 20vh;
+  background-color: pink;
 }
