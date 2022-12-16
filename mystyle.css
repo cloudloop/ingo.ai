@@ -6,6 +6,7 @@
     --LOGO-W: 218px; 
     --LOGO-H: 1122px;
     --SCALE: 0.1;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -13,16 +14,20 @@ body {
     background-color: var(--COLOR-1-WHITE);
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .container {
     min-width: 370px;
     min-height: 200px;
     width: 100%;
-    transform: translate(0,33vh);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 30px;
+    align-items: flex-end;
   }
   .a {
     height: 200px;
@@ -40,6 +45,23 @@ body {
   .dot {
     height: 40px;
     width: 40px;
-    transform: translate(0,160px);
     background-color: var(--COLOR-1-BLUE);
   }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--COLOR-2-WHITE);
+    margin: 4vh;
+    gap: calc(340px/6);
+    max-width: 340px;
+  }
+  .link {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    border: lightgray 1px solid;
+    text-align: center;
+}
