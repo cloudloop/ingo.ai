@@ -58,6 +58,9 @@ body {
     gap: calc(340px/6);
     max-width: 340px;
   }
+  a {
+    text-decoration: none;
+  }
   .link {
     align-items: center;
     font-weight: bold;
