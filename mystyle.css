@@ -150,9 +150,11 @@ body {
   margin-top: 3vh;
   margin-bottom: 5vh;
 }
+
 .featureTitle{
   text-align: center;
   font-variant: small-caps;
+  font-weight: bolder;
   color: var(--COLOR-1-WHITE);
   padding: 1.5em;
 
@@ -162,14 +164,18 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 5vw;
-  margin: auto 10vw ;
+  margin: auto 5vw ;
 }
 .feature-card{
   flex: 1;
-  min-height: 30vh;
+  min-height: 150px;
+  height: 25vh;
+  max-height: 30vh;
   border-radius: 5px;
-  min-width: 100px;
+  min-width: 120px;
+  max-width: 25vw;
   background-color: grey;
   vertical-align: middle;
 }
