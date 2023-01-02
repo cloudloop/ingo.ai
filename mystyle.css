@@ -174,57 +174,6 @@ body {
   vertical-align: middle;
 }
 
-
-
-
-
-
-
-footer{
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  min-height: 20vh;
-  background-color: pink;
-}
-
-.featured {
-  width: 100%;
-  min-height: 33vh;
-  position: relative;
-  background-color: lightgray;
-  padding-bottom: 5vw;
-  margin-top: 3vh;
-}
-.featureTitle{
-  text-align: center;
-  font-variant: small-caps;
-  color: var(--COLOR-1-WHITE);
-  padding: 1em;
-
-}
-.f-cont {
-  width:90vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5vw;
-  margin: auto 5vw ;
-}
-.feature-card{
-  flex: 1;
-  height: 20vh;
-  min-width: 100px;
-  background-color: grey;
-  vertical-align: middle;
-}
-
-
-
-
-
-
-
 footer{
   position: absolute;
   bottom: 0px;
