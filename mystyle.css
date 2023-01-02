@@ -15,10 +15,10 @@ body {
     color: var(--COLOR-1-BLUE);
     background-color: var(--COLOR-1-WHITE);
     width: 100vw;
-    min-height: 200vh;
+    min-height: 100vh;
     overflow: scroll;
     position: relative;
-    top:0px;
+    top: 0px;
     display: block;
     flex-flow: column;
     align-items: center;
