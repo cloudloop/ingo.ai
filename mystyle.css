@@ -41,6 +41,7 @@ body {
 
 
 .contcont {
+  flex: 1;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -139,18 +140,21 @@ body {
 }
 
 .featured {
+  flex: 1;
   width: 100%;
   min-height: 33vh;
+  bottom: 0vh;
   position: relative;
   background-color: lightgray;
   padding-bottom: 5vw;
   margin-top: 3vh;
+  margin-bottom: 5vh;
 }
 .featureTitle{
   text-align: center;
   font-variant: small-caps;
   color: var(--COLOR-1-WHITE);
-  padding: 1em;
+  padding: 1.5em;
 
 }
 .f-cont {
@@ -159,11 +163,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5vw;
-  margin: auto 5vw ;
+  margin: auto 10vw ;
 }
 .feature-card{
   flex: 1;
-  height: 20vh;
+  min-height: 30vh;
+  border-radius: 5px;
   min-width: 100px;
   background-color: grey;
   vertical-align: middle;
