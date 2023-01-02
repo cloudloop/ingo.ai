@@ -10,11 +10,16 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+::--webkit-scrollbar {
+  width: 0px;
+}
+
 body {
     color: var(--COLOR-1-BLUE);
     background-color: var(--COLOR-1-WHITE);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-flow: column;
     align-items: center;
