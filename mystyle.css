@@ -107,6 +107,7 @@ body {
   transform: rotate(45deg);
   position: absolute;
   bottom: 3vh;
+  align-self: center;
   
 }
 .down-arrow:hover {
