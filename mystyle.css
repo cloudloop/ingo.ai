@@ -15,17 +15,30 @@
 }
 
 body {
-    color: var(--COLOR-1-BLUE);
-    background-color: var(--COLOR-1-WHITE);
-    width: 100vw;
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  color: var(--COLOR-1-BLUE);
+  background-color: var(--COLOR-1-WHITE);
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.contcont {
+flex: 1;
+min-height: 100vh;
+position: relative;
+display: flex;
+top:0px;
+flex-flow: column;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
 .container {
     min-width: 370px;
     min-height: 200px;
