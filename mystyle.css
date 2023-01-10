@@ -113,3 +113,52 @@ body {
 .down-arrow:hover {
   border-color: var(--COLOR-1-BLUE);
 }
+
+.featured {
+  flex: 1;
+  width: 100%;
+  min-height: 33vh;
+  bottom: 0vh;
+  position: relative;
+  background-color: lightgray;
+  padding-bottom: 5vw;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.featureTitle{
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bolder;
+  color: var(--COLOR-1-WHITE);
+  padding: 1.5em;
+
+}
+.f-cont {
+  width:90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  margin: auto 5vw ;
+}
+.feature-card{
+  flex: 1;
+  min-height: 150px;
+  height: 25vh;
+  max-height: 30vh;
+  border-radius: 5px;
+  min-width: 120px;
+  max-width: 25vw;
+  background-color: grey;
+  vertical-align: middle;
+}
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  min-height: 20vh;
+  background-color: pink;
+}
