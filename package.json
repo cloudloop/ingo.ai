@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cloudloop/ingo.ai/issues"
   },
-  "homepage": "https://github.com/cloudloop/ingo.ai#readme"
+  "homepage": "https://github.com/cloudloop/ingo.ai#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.2.3"
+  }
 }

@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const supabase = require('@supabase/supabase-js')
 
 http.createServer((req, res) => {
   console.log(`${req.method} ${req.url}`);
@@ -63,3 +64,11 @@ http.createServer((req, res) => {
 }).listen(8000);
 
 console.log('Server running at http://localhost:8000/');
+
+
+const SUPABASE_URL = 'https://kiaqszjiwrstfqkmrrru.supabase.co'
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpYXFzemppd3JzdGZxa21ycnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjcyMTUzNjEsImV4cCI6MTk4Mjc5MTM2MX0.nh0Fk4oiM5JQdWF6EL1EwHluuawv1ibBEFgBqciKI9M'
+
+let sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY)
+
+console.log(SUPABASE_KEY, SUPABASE_URL)
